@@ -7,34 +7,35 @@ alphabetical order.
 
 Example of sort() being used:
 
-  function arrange(values) {
-    values.sort();
-    return values;
-  }
-  arrange(["China", "Germany", "United States", "Great Britain", "Brazil"]);
-  
-  [ 'Brazil', 'China', 'Germany', 'Great Britain', 'United States' ]
+	  function arrange(values) {
+	    values.sort();
+	    return values;
+	  }
+	  arrange(["China", "Germany", "United States", "Great Britain", "Brazil"]);
+	  
+	  [ 'Brazil', 'China', 'Germany', 'Great Britain', 'United States' ]
   
 In order to discover the unicode value of a particular character at a specified index in a string the charCodeAt() method is used:
 
-  function findCharCode(string) {
-	  return string.charCodeAt(0);
-  }
-  findCharCode("GITHUB");
-  
-  71
+	  function findCharCode(string) {
+		  return string.charCodeAt(0);
+	  }
+	  findCharCode("GITHUB");
+	  
+	  71
 
 In contrast, the fromCharCode() method converts Unicode values into characters. Note: This is a static method of the String object,
 and the syntax is always String.fromCharCode().
 
-  function char(value) {
-	  x = String.fromCharCode(value);
-	  return x;
-    }
-    char(97);
-    
-    'a'
-
+	  function char(value) {
+		  x = String.fromCharCode(value);
+		  return x;
+	    }
+	    char(97);
+	    
+	    'a'
+	
+Unicode Characters:
 
         Decimal Value   Character         Decimal Value   Character         Decimal Value   Character       Decimal Value   Character
         32              SPACE             56              8                 80              P               104             h
